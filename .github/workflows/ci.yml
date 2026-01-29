@@ -21,6 +21,7 @@ jobs:
 
       - name: Install dependencies
         run: |
+          pip install -e .
           pip install pytest pytest-cov pylint bandit pip-audit build
 
       - name: Run pylint (≥9.0)
