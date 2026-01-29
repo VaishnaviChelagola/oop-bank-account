@@ -1,0 +1,25 @@
+[project]
+name = "oop-bank-account"
+version = "0.1.0"
+description = "Simple OOP Bank Account"
+authors = [
+    {name = "VaishnaviChelagola",email = "chelagolavaishnavi@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+]
+
+[tool.poetry]
+packages = [{include = "oop_bank_account", from = "src"}]
+
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+addopts = "--cov=bank_account --cov-fail-under=90"
+
+[tool.pylint]
+disable = ["missing-module-docstring"]
